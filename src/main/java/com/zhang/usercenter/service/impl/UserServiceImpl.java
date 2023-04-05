@@ -123,7 +123,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
     public int userLogout(HttpServletRequest request) {
         //移除登录态
         request.getSession().removeAttribute(USER_LOGIN_STATE);
-
         throw new BusinessException(ErrorCode.LOGOUT_SUCCESS,"注销登录成功!");
     }
 
