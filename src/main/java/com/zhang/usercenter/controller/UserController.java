@@ -77,7 +77,6 @@ public class UserController {
             throw new BusinessException(ErrorCode.NOT_LOGIN);
         }
         long userId = currentUser.getId();
-        //
         User user = userService.getById(userId);
         User safetyUser=userService.getSafetyUser(user);
         return ResultUtils.success(safetyUser);
