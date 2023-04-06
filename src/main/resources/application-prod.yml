@@ -1,0 +1,12 @@
+# DataSource Config在此出更新新的数据库地址
+spring:
+  application:
+    name: user-center
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: 'jdbc:mysql://sh-cynosdbmysql-grp-k2fl07a2.sql.tencentcdb.com:22437/user_center'
+    username: root
+    password: Zzhf0308
+  # session 失效时间
+  session:
+    timeout: 86400
